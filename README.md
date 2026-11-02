@@ -5,7 +5,7 @@ Seven deterministic procurement checks for small and mid-sized businesses, by [K
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, JSON-RPC 2.0, MCP 2025-06-18)
 - **Auth:** none for the public tier, rate limited per sender. Partner keys for higher volume and white label.
 - **Integration guide and partner terms:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
-- **Registry name:** `com.kulicadvisory/werkbank`
+- **Registry name:** `com.kulicadvisory/aictionbot-werkbank`
 
 No AI inside the checks. Nothing you pass in is stored. Findings are written in German, with structured data (`structuredContent`) for your own interface; input keys may be German or English. Not legal or tax advice.
 
