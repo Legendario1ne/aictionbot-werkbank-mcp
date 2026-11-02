@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.kulicadvisory/aictionbot-werkbank",
+  "title": "AICTIONBOT™ Werkbank",
+  "description": "Procurement checks for SMBs: price increase vs Eurostat, sanctions, deadlines, discounts, approvals.",
+  "version": "1.2.0",
+  "websiteUrl": "https://www.kulicadvisory.com/workbench/partner/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.kulicadvisory.com/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "tool": "manual",
+      "version": "1.2.0",
+      "publisher": "KULIC Advisory, Cologne",
+      "tools": [
+        "check_price_increase",
+        "list_categories",
+        "screen_sanctions",
+        "calculate_notice_deadline",
+        "check_discount_window",
+        "check_approval_matrix",
+        "check_invoice_payment"
+      ],
+      "auth": "none (public, rate limited); partner keys for higher volume",
+      "docs_de": "https://www.kulicadvisory.com/de/werkbank/partner/"
+    }
+  }
+}
