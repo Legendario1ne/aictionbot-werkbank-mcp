@@ -2,9 +2,29 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.kulicadvisory/aictionbot-werkbank",
   "title": "AICTIONBOT™ Werkbank",
-  "description": "Procurement checks for SMBs: price increase vs Eurostat, sanctions, deadlines, discounts, approvals.",
-  "version": "1.2.0",
+  "description": "Procurement tools for SMBs: 15 checks without AI, templates, Painpoint Atlas, AI contract review.",
+  "version": "1.5.0",
   "websiteUrl": "https://www.kulicadvisory.com/workbench/partner/",
+  "repository": {
+    "url": "https://github.com/Legendario1ne/aictionbot-werkbank-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://www.kulicadvisory.com/app-icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://www.kulicadvisory.com/app-icon-192.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "192x192"
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
@@ -14,7 +34,7 @@
   "_meta": {
     "io.modelcontextprotocol.registry/publisher-provided": {
       "tool": "manual",
-      "version": "1.2.0",
+      "version": "1.5.0",
       "publisher": "KULIC Advisory, Cologne",
       "tools": [
         "check_price_increase",
@@ -23,9 +43,42 @@
         "calculate_notice_deadline",
         "check_discount_window",
         "check_approval_matrix",
-        "check_invoice_payment"
+        "check_invoice_payment",
+        "check_rasci_matrix",
+        "check_catalog",
+        "build_category_profile",
+        "find_in_list",
+        "analyse_spend",
+        "match_documents",
+        "check_vendor_master",
+        "build_business_case",
+        "atlas_overview",
+        "find_painpoint",
+        "get_painpoint",
+        "find_scene",
+        "get_scene",
+        "search_library",
+        "get_article",
+        "list_templates",
+        "get_template",
+        "fill_template",
+        "werkbank_licence",
+        "review_contract",
+        "compare_offers",
+        "check_invoice",
+        "write_scope_of_work",
+        "write_meeting_minutes",
+        "plan_negotiation",
+        "negotiation_round",
+        "evaluate_negotiation",
+        "get_painpoint_full"
       ],
-      "auth": "none (public, rate limited); partner keys for higher volume",
+      "groups": {
+        "without_sign_in_checks": 15,
+        "without_sign_in_lookup": 10,
+        "with_licence": 10
+      },
+      "auth": "25 tools need no sign-in: 15 deterministic checks without AI and 10 tools for looking things up (library, templates, Painpoint Atlas excerpt, Painpoint Cinema). AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status use OAuth 2.1 (PKCE, CIMD, DCR) with an AICTIONBOT Werkbank licence; connecting without a licence keeps the free tools.",
       "docs_de": "https://www.kulicadvisory.com/de/werkbank/partner/"
     }
   }
