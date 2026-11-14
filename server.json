@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.kulicadvisory/aictionbot-werkbank",
   "title": "AICTIONBOT™ Werkbank",
-  "description": "Procurement tools for SMBs: 15 checks without AI, templates, Painpoint Atlas, AI contract review.",
-  "version": "1.5.0",
+  "description": "Procurement tools for SMBs and AI agents: 37 checks, NDA, RFQ, Painpoint Atlas, AI review.",
+  "version": "1.12.0",
   "websiteUrl": "https://www.kulicadvisory.com/workbench/partner/",
   "repository": {
     "url": "https://github.com/Legendario1ne/aictionbot-werkbank-mcp",
@@ -34,7 +34,7 @@
   "_meta": {
     "io.modelcontextprotocol.registry/publisher-provided": {
       "tool": "manual",
-      "version": "1.5.0",
+      "version": "1.12.0",
       "publisher": "KULIC Advisory, Cologne",
       "tools": [
         "check_price_increase",
@@ -52,6 +52,25 @@
         "match_documents",
         "check_vendor_master",
         "build_business_case",
+        "check_contracts",
+        "check_actions",
+        "score_offers",
+        "rate_supplier",
+        "screen_supplier_risk",
+        "track_value",
+        "segment_suppliers",
+        "compare_scenarios",
+        "check_kpis",
+        "process_lever",
+        "check_portfolio",
+        "map_stakeholders",
+        "plan_sourcing",
+        "audit_list",
+        "assess_team",
+        "ai_readiness",
+        "check_ai_use_case",
+        "esg_questionnaire",
+        "weekly_status",
         "atlas_overview",
         "find_painpoint",
         "get_painpoint",
@@ -62,6 +81,14 @@
         "list_templates",
         "get_template",
         "fill_template",
+        "find_comic",
+        "create_nda",
+        "create_rfq",
+        "open_table",
+        "read_table",
+        "add_to_table",
+        "change_table",
+        "delete_table",
         "werkbank_licence",
         "review_contract",
         "compare_offers",
@@ -74,11 +101,12 @@
         "get_painpoint_full"
       ],
       "groups": {
-        "without_sign_in_checks": 15,
-        "without_sign_in_lookup": 10,
-        "with_licence": 10
+        "open_lookup": 11,
+        "open_shared_table_edits": 4,
+        "checks_without_ai": 37,
+        "with_licence_ai_and_full_atlas": 10
       },
-      "auth": "25 tools need no sign-in: 15 deterministic checks without AI and 10 tools for looking things up (library, templates, Painpoint Atlas excerpt, Painpoint Cinema). AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status use OAuth 2.1 (PKCE, CIMD, DCR) with an AICTIONBOT Werkbank licence; connecting without a licence keeps the free tools.",
+      "auth": "Open without sign-in: 11 tools for looking things up (library, templates, Painpoint Atlas excerpt, Painpoint Cinema, comic library, price check categories) and reading or editing an existing Shared Table. The 37 checks without AI (including NDA, RFQ, template fill and opening a new Shared Table) run with an AICTIONBOT Werkbank licence, a trial week, a contract key or a partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”. AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status need a licence. Sign-in: OAuth 2.1 (PKCE, CIMD, DCR).",
       "docs_de": "https://www.kulicadvisory.com/de/werkbank/partner/"
     }
   }
