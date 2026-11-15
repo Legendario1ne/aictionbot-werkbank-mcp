@@ -5,9 +5,9 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.13.0, **63 tools**
+- **Version:** 1.14.0, **67 tools**
 - **Open without sign-in:** 11 tools for looking things up and 4 for reading or editing an existing Shared Table.
-- **38 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
+- **42 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
 - **Integration guide, partner terms and test keys:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
@@ -45,7 +45,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `change_table` | Change a Shared Table: edit or remove entries, connect cards on the board, rename |
 | `delete_table` | Delete a Shared Table for both sides |
 
-## Checks without AI (38)
+## Checks without AI (42)
 
 | Tool | What it does |
 |---|---|
@@ -87,6 +87,10 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `esg_questionnaire` | Sustainability evidence questions for suppliers by category, and a check of the answers against required evidence (no rating, no seal) |
 | `weekly_status` | Weekly status as a traffic light: each figure against last week and target, what moved most |
 | `describe_role` | Role profile from a job title, level, approval limit and RACI per activity: purpose, KPIs, skills, segregation-of-duties checks and a job advertisement in German and English |
+| `write_buying_policy` | One-page buying policy from three value limits: five questions before every purchase (quotes, specification, award note, contract, approval), answer for one purchase, and a check of an order list against the rules with possible order splitting |
+| `build_service_catalogue` | Service catalogue for a procurement team in three levels with requester, response and cycle time in working days and what the department must provide; or a check of the team's own list |
+| `build_handover_file` | Handover file when someone leaves or goes on holiday: what to settle before the last day (approvals tied to the person, deadlines in the absence, overdue items), what falls due during the absence, contacts, load per deputy |
+| `check_switchover` | Switch-over check for a new system or a new supplier: twelve-point checklist dated from the go-live, readiness traffic light from the team's own list, gaps and a Q&A sheet for staff |
 
 ## With a Werkbank licence (10)
 
