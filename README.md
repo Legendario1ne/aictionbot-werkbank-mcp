@@ -5,9 +5,9 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.14.0, **67 tools**
+- **Version:** 1.15.0, **71 tools**
 - **Open without sign-in:** 11 tools for looking things up and 4 for reading or editing an existing Shared Table.
-- **42 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
+- **46 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
 - **Integration guide, partner terms and test keys:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
@@ -45,7 +45,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `change_table` | Change a Shared Table: edit or remove entries, connect cards on the board, rename |
 | `delete_table` | Delete a Shared Table for both sides |
 
-## Checks without AI (42)
+## Checks without AI (46)
 
 | Tool | What it does |
 |---|---|
@@ -91,6 +91,10 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `build_service_catalogue` | Service catalogue for a procurement team in three levels with requester, response and cycle time in working days and what the department must provide; or a check of the team's own list |
 | `build_handover_file` | Handover file when someone leaves or goes on holiday: what to settle before the last day (approvals tied to the person, deadlines in the absence, overdue items), what falls due during the absence, contacts, load per deputy |
 | `check_switchover` | Switch-over check for a new system or a new supplier: twelve-point checklist dated from the go-live, readiness traffic light from the team's own list, gaps and a Q&A sheet for staff |
+| `analyse_issues` | Issue radar: groups a list of procurement or invoice problems into ten recurring causes, with share, open cases, the fix per cause, typical age, cases older than 30 days, open cases per owner and repeat suppliers |
+| `sort_categories` | Category sorter: assigns order or booking texts to a category tree of 30 categories in nine groups, with spend per group and category and rows left open |
+| `suggest_accounts` | Account helper: suggested general ledger account under the German standard charts SKR03 or SKR04 per invoice line, uncertain lines marked, total per account (not tax advice) |
+| `navigate_symptoms` | Symptom navigator: nine procurement symptoms rated 0 to 5 become, strongest first, what each costs, the first step for this week, the matching tools and the matching step of the KULIC ladder |
 
 ## With a Werkbank licence (10)
 
