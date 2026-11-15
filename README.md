@@ -5,9 +5,9 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.12.0, **62 tools**
+- **Version:** 1.13.0, **63 tools**
 - **Open without sign-in:** 11 tools for looking things up and 4 for reading or editing an existing Shared Table.
-- **37 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
+- **38 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
 - **Integration guide, partner terms and test keys:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
@@ -45,7 +45,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `change_table` | Change a Shared Table: edit or remove entries, connect cards on the board, rename |
 | `delete_table` | Delete a Shared Table for both sides |
 
-## Checks without AI (37)
+## Checks without AI (38)
 
 | Tool | What it does |
 |---|---|
@@ -86,6 +86,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `check_ai_use_case` | Check a planned AI use case for completeness and control: card, data readiness, risk questions, controls, signal proceed, pilot, redesign or stop |
 | `esg_questionnaire` | Sustainability evidence questions for suppliers by category, and a check of the answers against required evidence (no rating, no seal) |
 | `weekly_status` | Weekly status as a traffic light: each figure against last week and target, what moved most |
+| `describe_role` | Role profile from a job title, level, approval limit and RACI per activity: purpose, KPIs, skills, segregation-of-duties checks and a job advertisement in German and English |
 
 ## With a Werkbank licence (10)
 
