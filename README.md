@@ -5,9 +5,9 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.15.0, **71 tools**
+- **Version:** 1.16.0, **75 tools**
 - **Open without sign-in:** 11 tools for looking things up and 4 for reading or editing an existing Shared Table.
-- **46 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
+- **50 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
 - **Integration guide, partner terms and test keys:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
@@ -45,7 +45,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `change_table` | Change a Shared Table: edit or remove entries, connect cards on the board, rename |
 | `delete_table` | Delete a Shared Table for both sides |
 
-## Checks without AI (46)
+## Checks without AI (50)
 
 | Tool | What it does |
 |---|---|
@@ -95,6 +95,10 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `sort_categories` | Category sorter: assigns order or booking texts to a category tree of 30 categories in nine groups, with spend per group and category and rows left open |
 | `suggest_accounts` | Account helper: suggested general ledger account under the German standard charts SKR03 or SKR04 per invoice line, uncertain lines marked, total per account (not tax advice) |
 | `navigate_symptoms` | Symptom navigator: nine procurement symptoms rated 0 to 5 become, strongest first, what each costs, the first step for this week, the matching tools and the matching step of the KULIC ladder |
+| `build_buying_tiles` | Buying tiles: an internal page of twelve tiles that tells employees where to order what, with the channel, the rule and the owner per tile, and an answer to a single question such as where to order toner |
+| `write_invoice_letter` | Invoice letter: a letter to suppliers in German and English with the invoice requirements, the purchase order number rule, the e-invoice format and the invoice address, with missing details marked (not legal or tax advice) |
+| `check_einvoice` | E-invoice checker: reads the XML of an XRechnung or ZUGFeRD invoice (UBL or CII) and checks mandatory details, net plus tax against gross, the lines against the net total and tax per rate (not a full schema validation, not tax advice) |
+| `plan_request_to_offer` | Request to offer: a dated route from a customer request through supplier quotes to the own offer, with validity checks, the cheapest valid quote, the selling price with mark-up and RFQ and reminder texts in German and English |
 
 ## With a Werkbank licence (10)
 
