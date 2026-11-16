@@ -5,9 +5,9 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.27.0, **90 tools**
+- **Version:** 1.30.0, **96 tools**
 - **Open without sign-in:** 11 tools for looking things up and 4 for reading or editing an existing Shared Table.
-- **65 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
+- **71 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
 - **Integration guide, partner terms and test keys:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
@@ -45,7 +45,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `change_table` | Change a Shared Table: edit or remove entries, connect cards on the board, rename |
 | `delete_table` | Delete a Shared Table for both sides |
 
-## Checks without AI (65)
+## Checks without AI (71)
 
 | Tool | What it does |
 |---|---|
@@ -114,6 +114,12 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `compare_invoice_to_contract` | Invoice against contract: every item billed above the agreed price with the overbilled amount, items that are not in the contract, the invoice total at contract prices and a ready message asking the supplier for a credit note |
 | `compare_approval_matrix` | Approval matrix old against new: limits raised, deputies removed, approvers who are their own deputy, areas left without an approver, new and removed approval rights, who may approve more than before; the questions to answer before the matrix is loaded |
 | `supplier_error_profile` | Supplier error profile: which supplier makes which errors in a list of clarification cases (nine error types by keywords), hours and cost of clarification, the five suppliers with the most cases and a ready letter per supplier with their three most frequent errors |
+| `order_to_payment_status` | Order-to-payment status overview: from one export of requisitions, orders, goods receipts and invoices what is stuck where (invoice waiting for goods receipt, blocked, open to order, open to receive, goods receipt without invoice), open cases per cost centre and the next steps with who has to act |
+| `compare_sourcing_plans` | Sourcing plan old against new: categories dropped from the plan, targets removed or lowered, due dates moved, changed approach, the planned effect per year before and after and the questions before approval |
+| `check_nda` | Check their NDA: a non-disclosure agreement from the other side against twelve standard points by keywords (German and English texts), what goes beyond the usual (penalty, non-solicitation, non-compete, transfer of rights, unlimited liability, no end date) and what is missing. Not legal advice |
+| `compare_scope_of_work` | Scope of work old against new: dropped sections, changed figures, quantities and deadlines, new restrictions such as not included or at extra cost, new duties for the customer, ready questions for the other side |
+| `automation_portfolio` | Automation portfolio: per use case the hours and euros saved per year, the one-off cost and the payback in months from your own figures, sorted into three phases, with the cases that save no time and the ones that already work without AI |
+| `check_quantities` | Quantity and unit check: ordered against received quantity per line with the cause (different unit with the probable factor, over-delivery, lot size, under-delivery), the amount and the fix |
 
 ## With a Werkbank licence (10)
 
