@@ -5,9 +5,9 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.17.0, **76 tools**
+- **Version:** 1.19.0, **77 tools**
 - **Open without sign-in:** 11 tools for looking things up and 4 for reading or editing an existing Shared Table.
-- **51 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
+- **52 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
 - **Integration guide, partner terms and test keys:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
@@ -45,14 +45,14 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `change_table` | Change a Shared Table: edit or remove entries, connect cards on the board, rename |
 | `delete_table` | Delete a Shared Table for both sides |
 
-## Checks without AI (51)
+## Checks without AI (52)
 
 | Tool | What it does |
 |---|---|
 | `check_price_increase` | Check a supplier price increase against official market data (Germany) |
 | `screen_sanctions` | Screen a company or person against public sanctions lists |
 | `calculate_notice_deadline` | Calculate the last day to give notice on a contract |
-| `check_discount_window` | Find early-payment discounts (Skonto) that expire in the next days, and which payment run still catches them |
+| `check_discount_window` | Find early-payment discounts (Skonto) that expire in the next days, and which payment run still catches them; with `critical_suppliers` a payment run priority (critical suppliers first, blocked invoices with the reason and who clears the block) |
 | `check_approval_matrix` | Check an approval matrix against the people list: who approves although they left, lack a role or have no deputy |
 | `check_invoice_payment` | Check an invoice against the vendor master before paying: new bank account, unknown supplier, blocked vendor |
 | `check_rasci_matrix` | Check a RASCI matrix against the people list: tasks without an A, several A, no R, roles without an active person |
@@ -100,6 +100,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `check_einvoice` | E-invoice checker: reads the XML of an XRechnung or ZUGFeRD invoice (UBL or CII) and checks mandatory details, net plus tax against gross, the lines against the net total and tax per rate (not a full schema validation, not tax advice) |
 | `plan_request_to_offer` | Request to offer: a dated route from a customer request through supplier quotes to the own offer, with validity checks, the cheapest valid quote, the selling price with mark-up and RFQ and reminder texts in German and English |
 | `check_expenses` | Expense checker: travel expense claims against the official German per diem, mileage and overnight rates as of 1 January 2026 (Germany and all 214 destinations of the Federal Finance Ministry letter of 5 December 2025), with double submissions, overlaps, missing receipts and weekend trips; without a list, the rates for one destination (not tax advice) |
+| `create_einvoice` | Write an invoice: a German e-invoice as ZUGFeRD/Factur-X EN 16931 or XRechnung 3.0 (UN/CEFACT CII XML), calculated in cents, with the mandatory details of section 14 UStG, the EN 16931 rules and the XRechnung rules (BR-DE) checked; small business, reverse charge, intra-community supply and export with the exemption reason; the Workbench page turns it into a PDF/A-3 with the XML embedded (not tax advice) |
 
 ## With a Werkbank licence (10)
 
