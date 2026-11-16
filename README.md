@@ -5,9 +5,9 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.22.0, **81 tools**
+- **Version:** 1.23.0, **83 tools**
 - **Open without sign-in:** 11 tools for looking things up and 4 for reading or editing an existing Shared Table.
-- **56 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
+- **58 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
 - **Integration guide, partner terms and test keys:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
@@ -45,7 +45,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `change_table` | Change a Shared Table: edit or remove entries, connect cards on the board, rename |
 | `delete_table` | Delete a Shared Table for both sides |
 
-## Checks without AI (56)
+## Checks without AI (58)
 
 | Tool | What it does |
 |---|---|
@@ -105,6 +105,8 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `check_approval_backlog` | Approval backlog radar: open approvals per approver with number, amount and oldest age in days; documents overdue, with an expiring cash discount, waiting too long or with an absent approver; discount at risk in euros; remind or reroute to the deputy; a ready reminder |
 | `check_blanket_orders` | Blanket order guard: remaining budget, share used and use per month per blanket or limit order; the day the budget is expected to run out against the end of the term; open invoices without cover; next step (top up, renegotiate, framework contract, follow-up order) |
 | `compare_contracts` | Contract comparison: old and new version of a contract side by side, section by section; changed, new, removed and renumbered clauses with the sentence before and now; numbers, deadlines and dates before and after; price, payment, termination, liability and penalty changes flagged red; ready questions for the other side. Not legal advice |
+| `compare_offer_to_contract` | Offer against contract: price, payment, term, termination, warranty and liability from the offer next to the contract; what is missing in the contract, what is only in the contract, agreed points ticked off one by one; ready message to the other side. Not legal advice |
+| `compare_vendor_master` | Vendor master old against new: changed bank details (red before the next payment), account country changes, new vendors with gaps, the same bank account with two vendors, removed vendors; next step per case. Bank details are shortened in the result |
 
 ## With a Werkbank licence (10)
 
