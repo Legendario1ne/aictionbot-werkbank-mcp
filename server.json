@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.kulicadvisory/aictionbot-werkbank",
   "title": "AICTIONBOT™ Werkbank",
-  "description": "Procurement tools for SMBs and AI agents: 53 checks, e-invoice, NDA, RFQ, Painpoint Atlas, AI review",
-  "version": "1.20.0",
+  "description": "Procurement tools for SMBs and AI agents: 55 checks, e-invoice, NDA, RFQ, Painpoint Atlas, AI review",
+  "version": "1.21.0",
   "websiteUrl": "https://www.kulicadvisory.com/workbench/partner/",
   "repository": {
     "url": "https://github.com/Legendario1ne/aictionbot-werkbank-mcp",
@@ -34,7 +34,7 @@
   "_meta": {
     "io.modelcontextprotocol.registry/publisher-provided": {
       "tool": "manual",
-      "version": "1.20.0",
+      "version": "1.21.0",
       "publisher": "KULIC Advisory, Cologne",
       "tools": [
         "check_price_increase",
@@ -87,6 +87,8 @@
         "check_expenses",
         "create_einvoice",
         "reconcile_supplier_statement",
+        "check_approval_backlog",
+        "check_blanket_orders",
         "atlas_overview",
         "find_painpoint",
         "get_painpoint",
@@ -119,10 +121,10 @@
       "groups": {
         "open_lookup": 11,
         "open_shared_table_edits": 4,
-        "checks_without_ai": 53,
+        "checks_without_ai": 55,
         "with_licence_ai_and_full_atlas": 10
       },
-      "auth": "Open without sign-in: 11 tools for looking things up (library, templates, Painpoint Atlas excerpt, Painpoint Cinema, comic library, price check categories) and reading or editing an existing Shared Table. The 53 checks without AI (including NDA, RFQ, template fill and opening a new Shared Table) run with an AICTIONBOT Werkbank licence, a trial week, a contract key or a partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”. AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status need a licence. Sign-in: OAuth 2.1 (PKCE, CIMD, DCR).",
+      "auth": "Open without sign-in: 11 tools for looking things up (library, templates, Painpoint Atlas excerpt, Painpoint Cinema, comic library, price check categories) and reading or editing an existing Shared Table. The 55 checks without AI (including NDA, RFQ, template fill and opening a new Shared Table) run with an AICTIONBOT Werkbank licence, a trial week, a contract key or a partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”. AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status need a licence. Sign-in: OAuth 2.1 (PKCE, CIMD, DCR).",
       "docs_de": "https://www.kulicadvisory.com/de/werkbank/partner/"
     }
   }

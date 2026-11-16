@@ -5,9 +5,9 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.20.0, **78 tools**
+- **Version:** 1.21.0, **80 tools**
 - **Open without sign-in:** 11 tools for looking things up and 4 for reading or editing an existing Shared Table.
-- **53 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
+- **55 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
 - **Integration guide, partner terms and test keys:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
@@ -45,7 +45,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `change_table` | Change a Shared Table: edit or remove entries, connect cards on the board, rename |
 | `delete_table` | Delete a Shared Table for both sides |
 
-## Checks without AI (53)
+## Checks without AI (55)
 
 | Tool | What it does |
 |---|---|
@@ -102,6 +102,8 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `check_expenses` | Expense checker: travel expense claims against the official German per diem, mileage and overnight rates as of 1 January 2026 (Germany and all 214 destinations of the Federal Finance Ministry letter of 5 December 2025), with double submissions, overlaps, missing receipts and weekend trips; without a list, the rates for one destination (not tax advice) |
 | `create_einvoice` | Write an invoice: a German e-invoice as ZUGFeRD/Factur-X EN 16931 or XRechnung 3.0 (UN/CEFACT CII XML), calculated in cents, with the mandatory details of section 14 UStG, the EN 16931 rules and the XRechnung rules (BR-DE) checked; small business, reverse charge, intra-community supply and export with the exemption reason; the Workbench page turns it into a PDF/A-3 with the XML embedded (not tax advice) |
 | `reconcile_supplier_statement` | Statement reconciliation: a supplier's statement against your own open items and payments; per document paid (with date), open, blocked with the reason, unknown on your side, listed twice or with a different amount; credit notes the supplier has not deducted; totals and a ready reply letter to the supplier |
+| `check_approval_backlog` | Approval backlog radar: open approvals per approver with number, amount and oldest age in days; documents overdue, with an expiring cash discount, waiting too long or with an absent approver; discount at risk in euros; remind or reroute to the deputy; a ready reminder |
+| `check_blanket_orders` | Blanket order guard: remaining budget, share used and use per month per blanket or limit order; the day the budget is expected to run out against the end of the term; open invoices without cover; next step (top up, renegotiate, framework contract, follow-up order) |
 
 ## With a Werkbank licence (10)
 
