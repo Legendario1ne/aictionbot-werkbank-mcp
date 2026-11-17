@@ -5,9 +5,9 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.30.0, **96 tools**
+- **Version:** 1.31.0, **98 tools**
 - **Open without sign-in:** 11 tools for looking things up and 4 for reading or editing an existing Shared Table.
-- **71 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
+- **73 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
 - **Integration guide, partner terms and test keys:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
@@ -45,7 +45,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `change_table` | Change a Shared Table: edit or remove entries, connect cards on the board, rename |
 | `delete_table` | Delete a Shared Table for both sides |
 
-## Checks without AI (71)
+## Checks without AI (73)
 
 | Tool | What it does |
 |---|---|
@@ -120,6 +120,8 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `compare_scope_of_work` | Scope of work old against new: dropped sections, changed figures, quantities and deadlines, new restrictions such as not included or at extra cost, new duties for the customer, ready questions for the other side |
 | `automation_portfolio` | Automation portfolio: per use case the hours and euros saved per year, the one-off cost and the payback in months from your own figures, sorted into three phases, with the cases that save no time and the ones that already work without AI |
 | `check_quantities` | Quantity and unit check: ordered against received quantity per line with the cause (different unit with the probable factor, over-delivery, lot size, under-delivery), the amount and the fix |
+| `find_responsible` | Who is responsible: from your own list of topics, people in charge, deputies and value limits, the answer to who to ask and who may sign an amount, a notice sorted by topic and the gaps (two people in charge, no deputy, amount above every limit) |
+| `sort_questions` | Question sheet for your own purchasing help: collected questions sorted into nine topics, near-identical ones merged with a count, the answer next to each, open ones marked with the tool that helps. Sorts your questions and answers, writes none itself |
 
 ## With a Werkbank licence (10)
 
