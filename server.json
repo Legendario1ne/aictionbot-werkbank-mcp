@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.kulicadvisory/aictionbot-werkbank",
   "title": "AICTIONBOT™ Werkbank",
-  "description": "Procurement tools for SMBs and AI agents: 73 checks, e-invoice, NDA, RFQ, Painpoint Atlas, AI review",
-  "version": "1.32.0",
+  "description": "Procurement tools for SMBs and AI agents: 74 checks, contracts, e-invoice, NDA, RFQ, Atlas, AI help",
+  "version": "1.33.0",
   "websiteUrl": "https://www.kulicadvisory.com/workbench/partner/",
   "repository": {
     "url": "https://github.com/Legendario1ne/aictionbot-werkbank-mcp",
@@ -34,7 +34,7 @@
   "_meta": {
     "io.modelcontextprotocol.registry/publisher-provided": {
       "tool": "manual",
-      "version": "1.32.0",
+      "version": "1.33.0",
       "publisher": "KULIC Advisory, Cologne",
       "tools": [
         "check_price_increase",
@@ -120,6 +120,7 @@
         "fill_template",
         "find_comic",
         "create_nda",
+        "create_contract_draft",
         "create_rfq",
         "open_table",
         "read_table",
