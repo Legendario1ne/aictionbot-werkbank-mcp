@@ -5,9 +5,9 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.32.0, **99 tools**
+- **Version:** 1.33.0, **100 tools**
 - **Open without sign-in:** 12 tools for looking things up and 4 for reading or editing an existing Shared Table.
-- **73 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
+- **74 checks without AI** (including NDA, contract drafts, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
 - **Integration guide, partner terms and test keys:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
@@ -66,6 +66,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `build_business_case` | Business case for a procurement improvement: annual value band, ROI band, payback band and where the value comes from |
 | `fill_template` | Fill a table section of an Excel template or the placeholders of a Word template with the user's own values |
 | `create_nda` | Draft a mutual or one-way non-disclosure agreement (NDA) from the KULIC Advisory NDA template |
+| `create_contract_draft` | Draft a contract from the KULIC Advisory templates: service agreement, service level agreement, framework agreement for call-offs, master service agreement with statements of work, or supply agreement for production materials and related services, in German or English (a draft, not legal advice) |
 | `open_table` | Open a new Shared Table: one encrypted file for two sides (need, scope, offers, decision, open points) |
 | `check_contracts` | Check a whole contract list: notice deadlines in the next days, silent renewals, missed deadlines, contracts without an owner |
 | `check_actions` | Check an action log or implementation tracker: overdue, blocked, no owner, no due date, duplicates, overload, traffic light per work package |
