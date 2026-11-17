@@ -5,8 +5,8 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.31.0, **98 tools**
-- **Open without sign-in:** 11 tools for looking things up and 4 for reading or editing an existing Shared Table.
+- **Version:** 1.32.0, **99 tools**
+- **Open without sign-in:** 12 tools for looking things up and 4 for reading or editing an existing Shared Table.
 - **73 checks without AI** (including NDA, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
@@ -30,6 +30,7 @@ Agents for procurement, finance or service often lack the procurement rules that
 | `get_painpoint` | Read one pain point from the Painpoint Atlas: what happens, how often it was found, cause, lever and the matching tool |
 | `find_scene` | Find scenes in the Painpoint Cinema: 100 documented scenes from twenty years of procurement, finance and sales |
 | `get_scene` | Read one scene of the Painpoint Cinema: what happened, the figures and the link to watch it |
+| `explain_term` | Explain a procurement term in plain words: the Purchasing Glossary of the AICTIONBOT™ Workbench (164 terms, German and English) |
 | `search_library` | Search the KULIC Advisory library: articles, signal reads, practice and proof cases, execution stories, guides and method pages |
 | `get_article` | Read one article, practice case or method page from the KULIC Advisory library as text |
 | `list_templates` | List the procurement and Source-to-Pay working templates of the KULIC Advisory Execution Toolkit Library |
