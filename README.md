@@ -5,9 +5,9 @@
 Procurement functions for small and mid-sized businesses and for the AI agents companies already run, by [KULIC Advisory](https://www.kulicadvisory.com/) (Cologne), as a public remote MCP server.
 
 - **Endpoint:** `https://www.kulicadvisory.com/mcp` (Streamable HTTP, stateless, JSON-RPC 2.0)
-- **Version:** 1.33.0, **100 tools**
+- **Version:** 1.45.0, **130 tools** (the 98 tools of the AICTIONBOT™ Werkbank plus Painpoint Atlas, library, templates, glossary, comics and the Shared Table)
 - **Open without sign-in:** 12 tools for looking things up and 4 for reading or editing an existing Shared Table.
-- **74 checks without AI** (including NDA, contract drafts, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
+- **Checks by fixed rules without AI** (including NDA, contract drafts, RFQ, template fill and opening a Shared Table): with an AICTIONBOT™ Werkbank licence, trial week, contract key or partner key; without a licence one check per connection every 30 days is free after signing in with “Connect without a licence”.
 - **10 tools with a licence:** AI analyses, negotiation sparring, the full Painpoint Atlas and the licence status.
 - **Sign-in:** OAuth 2.1 (PKCE, CIMD, DCR).
 - **Integration guide, partner terms and test keys:** https://www.kulicadvisory.com/workbench/partner/ (German: https://www.kulicadvisory.com/de/werkbank/partner/)
@@ -165,3 +165,40 @@ The rules come from more than 20 years of hands-on procurement and source-to-pay
 Privacy notice: https://www.kulicadvisory.com/privacy/ · Contact: dario@kulicadvisory.com
 
 This repository holds documentation, `server.json` and examples. The server itself runs on the KULIC Advisory website and is not open source.
+
+## New since 1.33.0
+
+The endpoint `/mcp` lists a core set plus `find_tool` and `run_tool`; the full list is at `/mcp/alle`, themed sets at `/mcp/rechnung`, `/mcp/vertrag`, `/mcp/lieferant`, `/mcp/einkauf`, `/mcp/organisation` and `/mcp/wissen`.
+
+| Tool | What it does |
+|---|---|
+| `check_knowledge_risk` | Knowledge risk check: which tasks only one person can do, what is not written down, and the order for the knowledge transfer |
+| `find_duplicate_requisitions` | Duplicate requisitions: identical and near-identical purchase requisitions in a list, with the amount at risk |
+| `explain_status` | Status translator: what a purchasing status means in plain words, who acts now, and which cases are stuck |
+| `check_requisition` | Requisition check: required details, pricing, budget basis, data protection, direct award reason and lead time before a requisition is submitted |
+| `diagnose_approval` | Approval diagnosis: who must approve this amount on this cost centre, and why an approval is stuck |
+| `check_supplier_readiness` | Supplier readiness: which suppliers are ready for a switchover or a tender, what is missing per supplier, and a letter to the open ones |
+| `watch_contractor_duration` | Contractor duration watch: maximum assignment period and equal pay for agency workers, risks of disguised agency work and false self-employment |
+| `build_guide_from_recording` | From recording to instructions: the transcript of someone explaining a task becomes numbered steps, notes, numbers, terms and open questions |
+| `build_knowledge_package` | Knowledge transfer package: a file list becomes a folder structure, knowledge cards, a version clean-up list and a handover index |
+| `harmonise_payment_terms` | Payment terms harmoniser: supplier terms against your standard, cash tied up, discounts worth taking, baseline date and a letter to suppliers |
+| `sort_grir_items` | GR/IR item sorter: open goods receipt and invoice items sorted by cause and age, with the action per item |
+| `compare_order_confirmation` | Order confirmation check: the supplier's confirmation against your purchase order, with deviations and a reply |
+| `check_surcharge` | Surcharge check: is a tariff, energy, material, freight or handling surcharge owed, with the Incoterms 2020 split of costs and a reply |
+| `check_bank_change` | Bank detail change check: warning signs of payment fraud, IBAN check digits, the steps and a callback record |
+| `write_service_level_agreement` | SLA builder: a service list becomes a service level agreement with deadlines, KPIs, measurement, escalation and the gaps |
+| `build_acceptance_tests` | Acceptance test builder: process steps become positive, negative, authorisation and interface test cases plus an acceptance record |
+| `build_process_map` | Process map levels 1 to 4: a list or indented notes become a clean process hierarchy with duplicates, gaps and missing parts flagged |
+| `check_down_payment` | Down payment check: is a supplier down payment reasonable and secured, with the checklist |
+| `guide_account_assignment` | Account assignment guide: project (WBS), fixed asset, internal order or cost centre per need, with the reason |
+| `plan_onboarding_and_cover` | Onboarding and cover: a 30/60/90 day plan for a new buyer and the gaps in approval cover |
+| `check_receivables` | Receivables check: overdue customer invoices by age, DSO, top customers and the dunning step |
+| `reconcile_card_statement` | Company card reconciliation: card transactions against receipts, missing receipts per person, duplicates and private-looking merchants |
+| `bundle_tail_spend` | Tail spend bundler: the suppliers in the last 20 percent of spend grouped by category, with the route per category |
+| `kaizen_sheet` | Kaizen sheet: problem and on-site observations become waste types, five whys, measures and an escalation ladder |
+| `measure_meeting_loops` | Meeting loop meter: topics that keep coming back without a decision, with the person hours they cost |
+| `create_a3_sheet` | A3 sheet: one problem on one page, with a check of baseline, target, five whys, countermeasures and plan |
+| `plan_gemba_walk` | Gemba walk: agenda for 35 or 45 minutes, observations by type of waste, actions with owner and date |
+| `prepare_negotiation_four_field` | Negotiation four-field: facts, tactics, targets and supplier benefits on one sheet, with a consistency check |
+| `check_handoffs` | Handoff map: every handoff in a process checked for trigger, input, acceptance, deadline and escalation |
+| `search_knowledge` | Search the KULIC knowledge: question bank, glossary, Painpoint Atlas |
